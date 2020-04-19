@@ -35,4 +35,4 @@ for r in cursor:
     x.append(r[0])
     y.append(r[1])
 
-py.plot([go.Pie(labels=x, values=y, title='platforms and counts of games')], filename='third_query', auto_open=True)
+py.plot([go.Scatter(x=x, y=y, name='platforms and counts of games')], filename='third_query', auto_open=True)
