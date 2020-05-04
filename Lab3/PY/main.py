@@ -1,7 +1,11 @@
 import plotly.graph_objs as go
 import cx_Oracle
 from misc import password, api_key
+import chart_studio
+import chart_studio.plotly as py
 
+
+chart_studio.tools.set_credentials_file(username='larionov', api_key=api_key)
 
 username = 'SYSTEM'
 database = 'localhost'
@@ -67,7 +71,8 @@ fig = go.Figure(
     layout_title_text="query1"
 )
 
-fig.write_html('query1.html', auto_open=True)
+py.plot(fig, filename='query1.html', auto_open=True)
+# fig.write_html('query1.html', auto_open=True)
 
 
 # --- 2
@@ -84,7 +89,9 @@ fig = go.Figure(
     layout_title_text="query1"
 )
 
-fig.write_html('query2.html', auto_open=True)
+
+py.plot(fig, filename='query2.html', auto_open=True)
+# fig.write_html('query2.html', auto_open=True)
 
 
 # --- 3
@@ -100,4 +107,5 @@ fig = go.Figure(
     layout_title_text="query3"
 )
 
-fig.write_html('query3.html', auto_open=True)
+py.plot(fig, filename='query3.html', auto_open=True)
+# fig.write_html('query3.html', auto_open=True)
