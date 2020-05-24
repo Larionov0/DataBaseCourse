@@ -22,22 +22,17 @@ BEGIN
     
     IF comments_amount != 1
     THEN 
-        RAISE game_not_found_error;
+        RAISE comment_not_found_error;
     END IF;
     
     DELETE FROM Comment_ WHERE Comment_.id=comment_id;
     
     EXCEPTION 
     WHEN game_not_found_error 
-        THEN DBMS_OUTPUT.PUT_LINE('Game' || TO_CHAR(game_id) || ' not found');
+        THEN DBMS_OUTPUT.PUT_LINE('Game ' || TO_CHAR(game_id) || ' not found');
     WHEN comment_not_found_error 
-        THEN DBMS_OUTPUT.PUT_LINE('Comment' || TO_CHAR(comment_id) || ' not found');
+        THEN DBMS_OUTPUT.PUT_LINE('Comment ' || TO_CHAR(comment_id) || ' not found');
 END;
 
-SET SERVEROUTPUT ON;
-BEGIN
-    DBMS_OUTPUT.enable;
-    delete_comment(game_id=>2, comment_id=>3);
-END;
 
     

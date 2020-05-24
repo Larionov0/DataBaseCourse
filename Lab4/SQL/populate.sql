@@ -67,33 +67,33 @@ VALUES (3, 'The best!!!', 3, 2);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 1, 10);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
-VALUES (0, 1, 4);
+VALUES (-1, 1, 4);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 1, 2);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
-VALUES (0, 1, 5);
+VALUES (-1, 1, 5);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 1, 3);
 
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 2, 3);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
-VALUES (0, 2, 5);
+VALUES (-1, 2, 5);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 2, 2);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
-VALUES (0, 2, 10);
+VALUES (-1, 2, 10);
 
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 3, 4);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
-VALUES (0, 3, 2);
+VALUES (-1, 3, 2);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 3, 3);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 3, 10);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
-VALUES (0, 3, 1);
+VALUES (-1, 3, 1);
 INSERT INTO Game_Ratings(rate, user_id, game_id)
 VALUES (1, 3, 7);
 

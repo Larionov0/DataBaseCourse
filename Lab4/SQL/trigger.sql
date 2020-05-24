@@ -1,7 +1,7 @@
-CREATE or REPLACE TRIGGER country_check BEFORE INSERT
-    ON project FOR EACH ROW
-    WHEN ( new.country IS NULL )
-
+CREATE OR REPLACE TRIGGER rate_check BEFORE
+    UPDATE ON game_ratings
+    FOR EACH ROW
+    WHEN ( new.rate < 0 )
 BEGIN
-    :new.country := 'Unknown';
+    :new.rate := 0;
 END;
