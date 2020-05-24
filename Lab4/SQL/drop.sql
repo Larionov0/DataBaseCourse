@@ -1,0 +1,9 @@
+DROP TABLE Game_Genre;
+DROP TABLE Game_Platform;
+DROP TABLE Platform;
+DROP TABLE Game_Ratings;
+DROP TABLE Comment_;
+DROP TABLE Game;
+DROP TABLE Developer;
+DROP TABLE Genre;
+DROP TABLE User_;
